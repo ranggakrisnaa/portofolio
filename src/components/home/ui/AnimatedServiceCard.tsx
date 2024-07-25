@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { cn } from "@/utils/cn";
 import { IServiceItem } from "@/types";
 import Image from "next/image";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export function AnimatedServiceCard({
   item,
@@ -77,71 +78,23 @@ const IconSkeleton = ({ item }: Readonly<{ item: IServiceItem }>) => {
   return (
     <div className="overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
-        <IconContainer className="h-8 w-8 circle-1">
-          <Image
-            src={item.icons[0]}
-            alt={`icon-1`}
-            width={144}
-            height={144}
-            sizes="100%"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL="/images/placeholder.png"
-            className="h-4 w-4 aspect-square"
-          />
-        </IconContainer>
-        <IconContainer className="h-12 w-12 circle-2">
-          <Image
-            src={item.icons[1]}
-            alt={`icon-2`}
-            width={144}
-            height={144}
-            sizes="100%"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL="/images/placeholder.png"
-            className="h-6 w-6 aspect-square"
-          />
-        </IconContainer>
-        <IconContainer className="circle-3">
-          <Image
-            src={item.icons[2]}
-            alt={`icon-3`}
-            width={144}
-            height={144}
-            sizes="100%"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL="/images/placeholder.png"
-            className="h-8 w-8 aspect-square"
-          />
-        </IconContainer>
-        <IconContainer className="h-12 w-12 circle-4">
-          <Image
-            src={item.icons[3]}
-            alt={`icon-4`}
-            width={144}
-            height={144}
-            sizes="100%"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL="/images/placeholder.png"
-            className="h-6 w-6 aspect-square"
-          />
-        </IconContainer>
-        <IconContainer className="h-8 w-8 circle-5">
-          <Image
-            src={item.icons[4]}
-            alt={`icon-5`}
-            width={144}
-            height={144}
-            sizes="100%"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL="/images/placeholder.png"
-            className="h-4 w-4 aspect-square"
-          />
-        </IconContainer>
+        {item.icons.map((key, index) => {
+          return (
+            <IconContainer className="h-10 w-10">
+              <Image
+                src={key}
+                alt={`icon-1`}
+                width={144}
+                height={144}
+                sizes="100%"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="/images/placeholder.png"
+                className="h-10 w-10 aspect-square"
+              />
+            </IconContainer>
+          );
+        })}
       </div>
 
       <div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-[var(--primaryColor)] to-transparent animate-move">
