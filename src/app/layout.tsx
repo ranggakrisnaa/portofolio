@@ -26,9 +26,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nikhil Rajput",
+  title: "Rangga Krisna Putra",
   description:
-    "Nikhil Rajput is a proficient Software Engineer and Full Stack Developer from India, skilled in front-end and back-end development using modern tech stacks.",
+    "Rangga Krisna Putra is a proficient Software Engineer and Full Stack Developer from Indonesia, skilled in front-end and back-end development using modern tech stacks.",
   robots: {
     index: true,
     follow: true,
@@ -49,16 +49,14 @@ export const metadata: Metadata = {
     },
   ],
   keywords: [
-    "nikhil rajput",
-    "nikhil",
-    "nixrajput",
-    "nikhil-rajput",
-    "rajput nikhil",
-    "founder of nixlab",
-    "nixlab founder",
+    "rangga krisna",
+    "ranggakrisna",
+    "ranggakrisna",
+    "ranggakrisna",
+    "rangga",
     "full stack developer",
-    "indian developer",
-    "nixrajput github",
+    "indonesia developer",
+    "ranggakrisnaa github",
   ],
 };
 
