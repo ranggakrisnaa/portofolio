@@ -31,7 +31,7 @@ const projects: IProjectItem[] = [
     description:
       "A User Profile API developed using Gin and Gorm. The User Endpoint comprised functionalities such as user registration, login, user information updates, and user deletion. Similarly, the Photos Endpoint facilitated adding, retrieving, updating, and deleting photos.",
     icon: "/skills/gin.svg",
-    repoType: RepoType.Public,
+    repoType: RepoType.Private,
     projectType: ProjectType.Personal,
     githubUrl: "NONE",
     url: "NONE",
@@ -43,7 +43,7 @@ const projects: IProjectItem[] = [
     description:
       "This e-commerce API provides flexibility for developers to build different types of e-commerce platforms. Using [technology used], it simplifies store, product, and order management through user-friendly endpoints. Admins and customers can seamlessly interact, performing actions like launching new stores, adding items to carts, and tracking shipments.",
     icon: "/skills/nestjs.svg",
-    repoType: RepoType.Public,
+    repoType: RepoType.Private,
     projectType: ProjectType.Personal,
     githubUrl: "NONE",
     url: "NONE",
