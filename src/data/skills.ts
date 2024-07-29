@@ -17,7 +17,7 @@ const skills: ISkillListItem[] = [
       {
         title: "Go",
         level: SkillLevel.Begginer,
-        icon: "/skills/go.svg",
+        icon: "/skills/Go.svg",
       },
     ],
   },
